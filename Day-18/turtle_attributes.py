@@ -1,4 +1,7 @@
+import turtle
 from turtle import Turtle, Screen
+turtle.colormode(255)
+
 
 class Kasav:
 
@@ -6,10 +9,11 @@ class Kasav:
         self.turtle = Turtle()
         self.screen = Screen()
 
-    def kasav_shape(self, sp):
+    def kasav_properties(self, sp, wd):
         self.turtle.shape("turtle")
         self.turtle.color("DarkOliveGreen4")
         self.turtle.speed(sp)
+        self.turtle.width(wd)
 
     def kasav_screen_setup(self):
         self.screen.setup(width=1200, height=800)
